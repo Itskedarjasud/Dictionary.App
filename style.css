@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --webkit-font-smoothing: antialiased;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    min-height: 100vh;
+}
+.container{
+    width: 100%;
+    height: 40px;   
+    text-align: center;
+    margin: 10px;
+}  
+nav{
+    background-color: blueviolet;
+    color: white;
+    font-size: 25px;
+    padding: 30px;
+    text-align: center;
+}
+.input{
+    padding: 50px;  
+}
+.form-wrap{
+    padding: 25px;
+    display: flex;
+    justify-content: center; 
+     
+}
+.input-wrap {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+.input-wrap input{
+    font-size: 20px;
+    border: none;
+}
+#search{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+.loading{
+    display: none;
+}
+.data{
+    padding-top: 100px;
+    font-size: 20px;
+    color: gray;
+}
+.suggested{
+    background-color: blueviolet;
+    color: white;
+    border-radius: 5px;
+    padding: 2px 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+
+
+/* ------------------------------------------------------------------- */
+/* Add a media query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    .container {
+        height: auto; /* Let height adjust dynamically */
+    }
+    nav {
+        padding: 20px; /* Decrease padding */
+    }
+    h1 {
+        font-size: 20px; /* Decrease font size */
+    }
+    .input {
+        padding: 20px; /* Decrease padding */
+    }
+    .form-wrap {
+        padding: 10px; /* Decrease padding */
+    }
+    .input-wrap input {
+        font-size: 16px; /* Decrease font size */
+    }
+    #search {
+        padding: 8px; /* Decrease padding */
+    }
+    .data {
+        padding-top: 50px; /* Decrease padding */
+        font-size: 16px; /* Decrease font size */
+    }
+}
+
+/* Additional styles for screens smaller than 480px */
+@media screen and (max-width: 480px) {
+    nav {
+        padding: 10px; /* Further decrease padding */
+    }
+    h1 {
+        font-size: 18px; /* Further decrease font size */
+    }
+    .input {
+        padding: 10px; /* Further decrease padding */
+    }
+    .form-wrap {
+        padding: 8px; /* Further decrease padding */
+    }
+    .input-wrap input {
+        font-size: 14px; /* Further decrease font size */
+    }
+    #search {
+        margin-top: 10px;
+        padding: 6px; /* Further decrease padding */
+    }
+    .data {
+        padding-top: 40px; /* Further decrease padding */
+        font-size: 14px; /* Further decrease font size */
+    }
+}
+
