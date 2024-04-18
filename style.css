@@ -39,6 +39,7 @@ nav{
 .input-wrap input{
     font-size: 20px;
     border: none;
+    outline: none;
 }
 #search{
     padding: 10px;
